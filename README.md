@@ -2,6 +2,11 @@
 
 A browser-based tool for laying out drug boxes and vials into a container, then exporting the result as an SVG file for LightBurn (laser cutter software).
 
+## Live site
+
+Once you've set up GitHub Pages (see below), the site will be at:
+`https://<your-username>.github.io/<repo-name>/`
+
 ## Features
 
 - Add drugs from presets (TXA, Cefazolin, Ket/Cef, Ondansetron, 1ml vial, 2ml vial, Methoxy/Fent lolly) or create custom boxes
@@ -18,6 +23,15 @@ A browser-based tool for laying out drug boxes and vials into a container, then 
 - **Mirror** checkbox per drug — generates a backing-layer container with those drugs at identical positions
 - SVG export ready for import into LightBurn
 
+## Setting up GitHub Pages
+
+1. Create a new repository on GitHub (public if you have a free account)
+2. Upload `index.html` to the root of the repo (either via the GitHub website's "Add file → Upload files", or via `git`)
+3. Go to the repo's **Settings** → **Pages** in the left sidebar
+4. Under **Source**, select **Deploy from a branch**
+5. Choose the `main` (or `master`) branch and the `/ (root)` folder
+6. Click **Save**
+7. Wait a minute or two, then reload the Pages settings page — the URL of your live site will appear at the top
 
 That's it. Any edits you push to the branch will redeploy automatically.
 
