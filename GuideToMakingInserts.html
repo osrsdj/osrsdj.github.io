@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guide to Making Inserts &mdash; jaedale.com</title>
+<style>
+  :root{
+    --bg: #14181c;
+    --panel: #1b2126;
+    --panel-line: #2a333a;
+    --ink: #e7ecef;
+    --muted: #7d8b93;
+    --accent: #5eead4;
+    --mono: 'SFMono-Regular', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  *{ box-sizing: border-box; }
+  html, body{
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.035) 1px, transparent 0);
+    background-size: 22px 22px;
+    line-height: 1.6;
+  }
+  main{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+  }
+  .back{
+    display: inline-flex; align-items: center; gap: 6px;
+    text-decoration: none;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .06em;
+    margin-bottom: 24px;
+    transition: color .12s;
+  }
+  .back:hover{ color: var(--accent); }
+  h1{
+    margin: 0 0 24px;
+    font-size: 32px;
+    font-weight: 650;
+    letter-spacing: -0.015em;
+  }
+  h2{
+    margin: 36px 0 14px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: -0.005em;
+  }
+  p{ margin: 0 0 16px; color: var(--ink); font-size: 15px; }
+  a.inline{
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent);
+  }
+  a.inline:hover{ border-bottom-style: solid; }
+  .settings{
+    background: var(--panel);
+    border: 1px solid var(--panel-line);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 14px 0 20px;
+    font-family: var(--mono);
+    font-size: 13.5px;
+    line-height: 2;
+  }
+  .settings .row{
+    display: flex; justify-content: space-between;
+    border-bottom: 1px dashed var(--panel-line);
+    padding: 2px 0;
+  }
+  .settings .row:last-child{ border-bottom: none; }
+  .settings .label{ color: var(--muted); }
+  .settings .value{ color: var(--ink); font-weight: 600; }
+  .note{
+    background: rgba(245, 166, 35, 0.08);
+    border-left: 3px solid #f5a623;
+    padding: 12px 16px;
+    margin: 16px 0;
+    color: var(--ink);
+    font-size: 14px;
+    border-radius: 0 6px 6px 0;
+  }
+  footer{
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--panel-line);
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: .04em;
+  }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">&lsaquo; back to home</a>
+  <h1>Guide to Making Inserts</h1>
+
+  <p>
+    Any foam can be used. Recommended is this
+    <a class="inline" href="https://www.bunnings.com.au/eva-50-x-50cm-black-solid-interlock-foam-mats-4-pack_p0126584" target="_blank" rel="noopener">Eva 50 x 50cm Black</a>
+    &mdash; one pack allows for 12 inserts to be made for the CTOMS Drug box.
+  </p>
+
+  <p>
+    You will need to cut out a bottom layer from the EVA foam. Some drugs will require the bottom layer to have a half cut so that they sit low enough.
+  </p>
+
+  <p>
+    Spray contact adhesive is recommended to glue the EVA together.
+  </p>
+
+  <h2>Cutting Settings</h2>
+  <p>For cutting all the way through, use these settings:</p>
+  <div class="settings">
+    <div class="row"><span class="label">Speed (mm/s)</span><span class="value">450</span></div>
+    <div class="row"><span class="label">Power Max (%)</span><span class="value">90</span></div>
+    <div class="row"><span class="label">Power Min (%)</span><span class="value">60</span></div>
+    <div class="row"><span class="label">Pass count</span><span class="value">1</span></div>
+  </div>
+
+  <h2>Half Cut Settings</h2>
+  <p>For cutting half way through, used for drugs that are larger (e.g. TXA, Cefazolin), use these settings:</p>
+  <div class="settings">
+    <div class="row"><span class="label">Speed (mm/s)</span><span class="value">150</span></div>
+    <div class="row"><span class="label">Power Max (%)</span><span class="value">60</span></div>
+    <div class="row"><span class="label">Power Min (%)</span><span class="value">40</span></div>
+    <div class="row"><span class="label">Pass count</span><span class="value">1</span></div>
+  </div>
+  <div class="note">
+    Ensure it's set to <strong>fill</strong> instead of <strong>line</strong>.
+  </div>
+
+  <footer>&copy; jaedale.com</footer>
+</main>
+</body>
+</html>
